@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 //using UnityEngine.InputSystem;
 
-[CreateAssetMenu(fileName = "New Fire Wand", menuName = "Item/Wand/Fire Wand")]
+[CreateAssetMenu(fileName = "Fire Staff", menuName = "Item/Weapon/Staff/Fire Staff")]
 public class FireWand : Weapon
 {
     [Header("Damage Multiplier")]
@@ -15,6 +15,10 @@ public class FireWand : Weapon
     [SerializeField] private int fireBallMoveSpeed;
     [SerializeField] private int fireBallAmount;
     [SerializeField] private GameObject fireBallPrefab;
+
+    private void Awake() {
+        _name  = "Staff";
+    }
 
     // public override void Attack(GameObject attacker)
     // {

@@ -20,6 +20,7 @@ public class Item : ScriptableObject
 {
     [Header("Info")]
     public string _name;
+    [TextArea(4,6)]
     public string _description;
     public Sprite icon;
     public ItemType _itemType;

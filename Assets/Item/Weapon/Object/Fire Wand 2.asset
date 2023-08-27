@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39b49b17fcc7b4743807b8055be769e2, type: 3}
-  m_Name: Fire Wand
+  m_Name: Fire Wand 2
   m_EditorClassIdentifier: 
-  _name: Dragonwrath Staff
-  _description: When attack hits enemy, has 50% chance to summon a flame geyser from
-    the sky on a random enemy in sight.
-  icon: {fileID: 1512075905, guid: e323cf5ee8db8d34da64d767c4688147, type: 3}
+  _name: Oathkeeper Staff
+  _description: ' When attack, has 15% Chance to bounds enemies for 10 seconds. (Bounded
+    enemies will receive 50% of main target receive damage)'
+  icon: {fileID: -1153655436, guid: e323cf5ee8db8d34da64d767c4688147, type: 3}
   _itemType: 1
-  _itemRarity: 2
+  _itemRarity: 3
   _isStackable: 0
   itemPrefab: {fileID: 0}
-  elementalType: 0
+  elementalType: 1
   fireDelay: 0
   _baseSkillDamageMultiplier: 0
   spreadAngle: 0
