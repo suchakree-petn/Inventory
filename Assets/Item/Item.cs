@@ -7,7 +7,7 @@ public enum ItemType
     Default,
     Weapon,
     Consumable,
-    Material
+    Relic
 }
 public enum ItemRarity
 {
@@ -25,7 +25,7 @@ public class Item : ScriptableObject
     public Sprite icon;
     public ItemType _itemType;
     public ItemRarity _itemRarity;
-    public bool _isStackable;
+    public int _maxStackCount;
 
     [Header("Prefab")]
     public GameObject itemPrefab;
