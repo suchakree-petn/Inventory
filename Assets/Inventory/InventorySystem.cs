@@ -23,9 +23,9 @@ public class InventorySystem : MonoBehaviour
 [System.Serializable]
 public struct SlotItem
 {
-    [SerializeField] private Item item;
-    [SerializeField] private int stackCount;
-    [SerializeField] private int maxStackCount;
+    public Item item;
+    public int stackCount;
+    public int maxStackCount;
     public SlotItem(Item item, int amount,int maxStackCount){
         this.item = item;
         this.stackCount = amount;
