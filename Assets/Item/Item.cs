@@ -22,7 +22,7 @@ public class Item : ScriptableObject
     public string _name;
     [TextArea(4,6)]
     public string _description;
-    public Sprite icon;
+    public Sprite _icon;
     public ItemType _itemType;
     public ItemRarity _itemRarity;
     public int _maxStackCount;
