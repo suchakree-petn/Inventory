@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2519832d508b424786deed825214d48, type: 3}
+  m_Name: Necklace1
+  m_EditorClassIdentifier: 
+  _name: Fire Necklace
+  _description: wweqweqe
+  _icon: {fileID: 0}
+  _itemType: 3
+  _itemRarity: 3
+  _maxStackCount: 0
+  itemPrefab: {fileID: 0}
+  _relicPart: 0
+  _bonusAttack: 0.22
+  _elementalBonusDamage: 0.2
+  _elementalBonusType: 0
