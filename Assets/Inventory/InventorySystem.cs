@@ -12,18 +12,30 @@ public class InventorySystem : MonoBehaviour
 
     public List<SlotItem> itemList = new List<SlotItem>();
     public int _maxSlot;
-
-    public void Add(SlotItem slotItem)
+    public void Add(Item item, ref int amount)
     {
-        for(int i = 0;i<itemList.Count;i++)
+        for (int i = 0; i < itemList.Count; i++)
         {
-            if (itemList[i].item == slotItem.item)
+            if (itemList[i].item._name == item._name && itemList[i].stackCount + amount <= itemList[i].maxStackCount)
             {
-                itemList[i] = slotItem;
+                itemList[i].stackCount += amount;
+                amount = 0;
+                return;
+            }
+            else if (itemList[i].item._name == item._name && itemList[i].stackCount + amount > itemList[i].maxStackCount)
+            {
+                int deficit = ((itemList[i].stackCount + amount) - item._maxStackCount);
+                itemList[i].stackCount += amount - deficit;
+                amount = deficit;
                 return;
             }
         }
-        itemList.Add(slotItem);
+
+        if (itemList.Count < _maxSlot)
+        {
+            itemList.Add(new SlotItem(item, amount, item._maxStackCount));
+            amount = 0;
+        }
     }
     public void Remove(Item item, int amount)
     {

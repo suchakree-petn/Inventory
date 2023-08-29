@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Common Scroll
   _description: Increase 100 exp.
-  icon: {fileID: 21300000, guid: 0193b527cb803404988a694066b398df, type: 3}
+  _icon: {fileID: 0}
   _itemType: 0
   _itemRarity: 0
-  _isStackable: 1
+  _maxStackCount: 50
   itemPrefab: {fileID: 0}
   _expAmount: 100
