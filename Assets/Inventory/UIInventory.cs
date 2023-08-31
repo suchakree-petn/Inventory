@@ -29,8 +29,11 @@ public class UIInventory : MonoBehaviour
     [SerializeField] private GameObject slotPrefab;
     [SerializeField] private GameObject InventoryPrefab;
 
-    public delegate void InventoryActions(Item item);
-    public static InventoryActions OnSlotClick;
+    public delegate void SlotActions(Item item);
+    public static SlotActions OnSlotClick;
+
+    public delegate void CategoryActions(ItemType itemType);
+    public static CategoryActions OnCategoryClick;
 
     List<SlotItem> _slotItem = new List<SlotItem>();
 
@@ -41,13 +44,15 @@ public class UIInventory : MonoBehaviour
     private void Start()
     {
         _slotItem = InventorySystem.Instance.itemList;
+        RefreshUIInventory(ItemType.Weapon);
+        OnSlotClick?.Invoke(_currentSelectItem);
 
     }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.B))
         {
-            RefreshUIInventory();
+            RefreshUIInventory(ItemType.Weapon);
             OnSlotClick?.Invoke(_currentSelectItem);
         }
     }
@@ -59,7 +64,7 @@ public class UIInventory : MonoBehaviour
         slot.transform.GetChild(1).GetComponentInChildren<TextMeshProUGUI>().text = slotItem.stackCount.ToString();
         return slot;
     }
-    public void RefreshUIInventory()
+    public void RefreshUIInventory(ItemType itemType)
     {
         // Is list empty?
         if (_slotItem == null)
@@ -77,16 +82,29 @@ public class UIInventory : MonoBehaviour
         UISlot.Clear();
 
         // Create new slot
-        foreach (SlotItem slotItem in _slotItem)
+        SlotItem firstItemInSlot = null;
+        for (int i = 0; i < _slotItem.Count; i++)
         {
-            GameObject slot = CreateUISlot(slotItem);
-            UISlot.Add(slot);
+
+            if (_slotItem[i].item._itemType == itemType)
+            {
+                if (firstItemInSlot == null)
+                {
+                    firstItemInSlot = _slotItem[i];
+                }
+                GameObject slot = CreateUISlot(_slotItem[i]);
+                UISlot.Add(slot);
+            }
         }
 
-        // Initial default select slot
-        if (_currentSelectItem == null)
+        // Init first select slot
+        if (firstItemInSlot == null)
         {
-            _currentSelectItem = _slotItem[0].item;
+            _currentSelectItem = null;
+        }
+        else
+        {
+            _currentSelectItem = firstItemInSlot.item;
         }
 
         // Enable description
@@ -96,7 +114,7 @@ public class UIInventory : MonoBehaviour
 
     private void InitDescriptionUI()
     {
-        if (_slotItem == null)
+        if (_slotItem == null || _currentSelectItem == null)
         {
             _inventoryContentTransform.gameObject.SetActive(false);
             _descriptionContentTransform.gameObject.SetActive(false);
