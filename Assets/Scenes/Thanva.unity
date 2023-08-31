@@ -766,9 +766,66 @@ MonoBehaviour:
     stackCount: 1
     maxStackCount: 1
   - item: {fileID: 11400000, guid: 622080370297c0d4eb1bb811a0b91086, type: 2}
-    stackCount: 998
-    maxStackCount: 999
-  _maxSlot: 4
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: b3385620bcf517547b4767da9bc7f094, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 548d01dae413ebc4b89b5e8c542382ba, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: ae4d6a912402b82499d3d93e6b9f9b64, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 52bc99ed2e2e44542b1dd8c7f95406da, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 3e44f0fe01648774eaa4d03c6dfc71e9, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: fcf2df55988febc4ea4d9ca019dfab58, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 798af0ee9329de24eafbe734b59b6c45, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 87db27b02d663074f8b5cccedc5a9603, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 4087f5cba35fed74c91a9666a145a414, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: ff14e01b912485f41a4dfb66e5eb2ee3, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: cfabef08946f8c045b6951ead430faa7, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 0d9cea05c78c09e4bbfc85b7388fca24, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 9d44a93713265584ca15fbc9b929d6f6, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: f8456e3ae130b4047a616e0ca5fe1bb1, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 0148b9f15a9d6924285c6d0fc2d8c672, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 2e23d5bd406a70642b3652344b97aedc, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 5c87514f86fc2a146a7c65dab0aea60d, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 751e56cc8a907a847b6f319a1cebd383, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  - item: {fileID: 11400000, guid: 54049288bc25bce47b4a952b6fdddbbe, type: 2}
+    stackCount: 1
+    maxStackCount: 1
+  _maxSlot: 55
 --- !u!1 &1542262304
 GameObject:
   m_ObjectHideFlags: 0

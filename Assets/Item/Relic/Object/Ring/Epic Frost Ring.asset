@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Epic Frost Ring
   m_EditorClassIdentifier: 
   _name: Rare Frost Ring
-  _description: Increase Mana Regeneration 12%. After Use Skill Mobility Incease
-    Frost Elemental Bonus Damage 16%.
+  _description: Increase Mana Regeneration by 12%. After Use Skill Mobility Incease
+    Frost Elemental Bonus Damage by 16%.
   _icon: {fileID: 1960691260, guid: 590a6d83e89e87142a9a3de65b6ff87d, type: 3}
   _itemType: 3
   _itemRarity: 2

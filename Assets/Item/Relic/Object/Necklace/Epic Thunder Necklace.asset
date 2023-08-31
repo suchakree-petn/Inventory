@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Epic Thunder Necklace
   _description: Increase Thunder Elemental Bonus Damage. After Skill Deal Damage
-    Create Shockwave.(Shockwave Deal AOE Thunder Elemental Damage 12% ATK)
+    Create Shockwave.(Shockwave Deal AOE Thunder Elemental Damage 12% of ATK)
   _icon: {fileID: -1266745058, guid: 590a6d83e89e87142a9a3de65b6ff87d, type: 3}
-  _itemType: 3
+  _itemType: 0
   _itemRarity: 2
   _maxStackCount: 1
   itemPrefab: {fileID: 0}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Rare Thunder Ring
   m_EditorClassIdentifier: 
   _name: Rare Thunder Ring
-  _description: Increase Mana Regeneration 8%. After Use Skill Mobility Incease Thunder
-    Elemental Bonus Damage 8%.
+  _description: Increase Mana Regeneration by 8%. After Use Skill Mobility Incease
+    Thunder Elemental Bonus Damage by 8%.
   _icon: {fileID: 854774121, guid: 590a6d83e89e87142a9a3de65b6ff87d, type: 3}
   _itemType: 3
   _itemRarity: 1

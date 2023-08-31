@@ -19,7 +19,7 @@ MonoBehaviour:
   _itemRarity: 0
   _maxStackCount: 1
   itemPrefab: {fileID: 0}
-  _relicPart: 0
+  _relicPart: 2
   _bonusAttack: 0.08
   _BonusHp: 0.24
   _BonusDefense: 0.18
