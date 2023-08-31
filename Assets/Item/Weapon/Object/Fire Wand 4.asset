@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b49b17fcc7b4743807b8055be769e2, type: 3}
   m_Name: Fire Wand 4
   m_EditorClassIdentifier: 
-  _name: Cunning Blitz Staff
+  _name: Blitz Chaos Staff
   _description: Chain shock enemies up to 10 times and has 20% chance to paralyzed
     (Can't attack)
-  icon: {fileID: 1633849522, guid: e323cf5ee8db8d34da64d767c4688147, type: 3}
-  _itemType: 0
+  _icon: {fileID: 1705884618, guid: e323cf5ee8db8d34da64d767c4688147, type: 3}
+  _itemType: 1
   _itemRarity: 2
-  _isStackable: 0
+  _maxStackCount: 0
   itemPrefab: {fileID: 0}
   elementalType: 1
   fireDelay: 0

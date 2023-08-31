@@ -13,4 +13,9 @@ public class Relic : Item
     public RelicPart _relicPart;
     public float _bonusAttack;
     public virtual void Equip(GameObject player) { }
+
+    private void Awake()
+    {
+        _itemType = ItemType.Relic;
+    }
 }

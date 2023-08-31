@@ -13,4 +13,8 @@ public class ExpScroll : Consumable
 
         // Add Exp to consumer
     }
+
+    private void Awake() {
+        _itemType = ItemType.Consumable;
+    }
 }
