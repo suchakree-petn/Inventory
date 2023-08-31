@@ -21,7 +21,7 @@ public class InventorySystem : MonoBehaviour
     }
 }
 [System.Serializable]
-public struct SlotItem
+public class SlotItem
 {
     public Item item;
     public int stackCount;
