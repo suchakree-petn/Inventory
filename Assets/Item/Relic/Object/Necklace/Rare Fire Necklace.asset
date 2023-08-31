@@ -15,9 +15,9 @@ MonoBehaviour:
   _name: Rare Fire Necklace
   _description: Increase Fire Elemental Bonus Damage. After Attack Create Follow-Up
     Attack This Effecf Occured Once Every 3 seconds.(Follow-Up Attack Deal Fire Elemental
-    Damage 8% ATK)
+    Damage 8% of ATK)
   _icon: {fileID: 489437162, guid: 590a6d83e89e87142a9a3de65b6ff87d, type: 3}
-  _itemType: 3
+  _itemType: 0
   _itemRarity: 1
   _maxStackCount: 1
   itemPrefab: {fileID: 0}

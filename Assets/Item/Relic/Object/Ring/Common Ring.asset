@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Common Ring
   m_EditorClassIdentifier: 
   _name: Common Ring
-  _description: Increase Mana Regeneration 4%.
+  _description: Increase Mana Regeneration by 4%.
   _icon: {fileID: 21300000, guid: 66f0b286b16896246bc0a99af0b5b804, type: 3}
   _itemType: 3
   _itemRarity: 0
