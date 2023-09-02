@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b49b17fcc7b4743807b8055be769e2, type: 3}
   m_Name: Fire Wand
   m_EditorClassIdentifier: 
-  _name: Dragon Wraith Staff
+  _name: Staff
   _description: When attack hits enemy, has 50% chance to summon a flame geyser from
     the sky on a random enemy in sight.
   _icon: {fileID: -768137432, guid: e323cf5ee8db8d34da64d767c4688147, type: 3}
   _itemType: 1
   _itemRarity: 2
   _maxStackCount: 0
+  _price: 7
   itemPrefab: {fileID: 0}
   elementalType: 1
   fireDelay: 0

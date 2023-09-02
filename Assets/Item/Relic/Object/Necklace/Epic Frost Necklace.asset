@@ -19,6 +19,7 @@ MonoBehaviour:
   _itemType: 3
   _itemRarity: 2
   _maxStackCount: 1
+  _price: 655
   itemPrefab: {fileID: 0}
   _relicPart: 0
   _bonusAttack: 0.24

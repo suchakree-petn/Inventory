@@ -19,6 +19,7 @@ public class UIInventory : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _descriptionName;
     [SerializeField] private Image _descriptionIcon;
     [SerializeField] private TextMeshProUGUI _descriptionText;
+    [SerializeField] private TextMeshProUGUI _priceText;
 
     [Header("UI Transform")]
     [SerializeField] private Transform _inventoryContentTransform;
@@ -147,18 +148,27 @@ public class UIInventory : MonoBehaviour
             _descriptionText.text = item._description;
         }
     }
+    private void RefreshPriceText(Item item)
+    {
+        if (item != null)
+        {
+            _priceText.text = "Price: " + item._price.ToString();
+        }
+    }
 
     private void OnEnable()
     {
         OnSlotClick += RefreshDescriptionName;
         OnSlotClick += RefreshDescriptionIcon;
         OnSlotClick += RefreshDescriptionText;
+        OnSlotClick += RefreshPriceText;
     }
     private void OnDisable()
     {
         OnSlotClick -= RefreshDescriptionName;
         OnSlotClick -= RefreshDescriptionIcon;
         OnSlotClick -= RefreshDescriptionText;
+        OnSlotClick -= RefreshPriceText;
 
     }
 }

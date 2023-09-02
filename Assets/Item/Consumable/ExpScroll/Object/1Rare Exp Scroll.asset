@@ -18,5 +18,6 @@ MonoBehaviour:
   _itemType: 2
   _itemRarity: 1
   _maxStackCount: 99
+  _price: 2
   itemPrefab: {fileID: 0}
   _expAmount: 500

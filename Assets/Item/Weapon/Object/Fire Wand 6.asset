@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b49b17fcc7b4743807b8055be769e2, type: 3}
   m_Name: Fire Wand 6
   m_EditorClassIdentifier: 
-  _name: Wind Shear Staff
+  _name: Staff
   _description: When attack hit enemy, has 30% chance to create a vortex to pull
     nearby enemies
   _icon: {fileID: -555151768, guid: e323cf5ee8db8d34da64d767c4688147, type: 3}
   _itemType: 1
   _itemRarity: 1
   _maxStackCount: 0
+  _price: 3
   itemPrefab: {fileID: 0}
   elementalType: 2
   fireDelay: 0

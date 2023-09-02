@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b49b17fcc7b4743807b8055be769e2, type: 3}
   m_Name: Fire Wand 3
   m_EditorClassIdentifier: 
-  _name: Wind Servant Staff
+  _name: Staff
   _description: 10% Chance to summon a Soul Servant when attack
   _icon: {fileID: 1880148330, guid: e323cf5ee8db8d34da64d767c4688147, type: 3}
   _itemType: 1
   _itemRarity: 2
   _maxStackCount: 0
+  _price: 100
   itemPrefab: {fileID: 0}
   elementalType: 2
   fireDelay: 0
