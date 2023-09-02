@@ -26,6 +26,7 @@ public class Item : ScriptableObject
     public ItemType _itemType;
     public ItemRarity _itemRarity;
     public int _maxStackCount;
+    public int _price;
 
     [Header("Prefab")]
     public GameObject itemPrefab;

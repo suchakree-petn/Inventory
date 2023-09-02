@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b49b17fcc7b4743807b8055be769e2, type: 3}
   m_Name: Fire Wand 0
   m_EditorClassIdentifier: 
-  _name: Fire Guard Staff
+  _name: Staff
   _description: Create fire ring around the Caster.
   _icon: {fileID: 1168515655, guid: e323cf5ee8db8d34da64d767c4688147, type: 3}
   _itemType: 1
   _itemRarity: 0
   _maxStackCount: 0
+  _price: 500
   itemPrefab: {fileID: 0}
   elementalType: 0
   fireDelay: 0
