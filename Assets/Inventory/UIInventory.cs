@@ -38,6 +38,10 @@ public class UIInventory : MonoBehaviour
 
     List<SlotItem> _slotItem = new List<SlotItem>();
 
+    [Header("Money")]
+    public int _money;
+    public TextMeshProUGUI showMoney;
+
     private void Awake()
     {
         Instance = this;
@@ -47,6 +51,7 @@ public class UIInventory : MonoBehaviour
         _slotItem = InventorySystem.Instance.itemList;
         RefreshUIInventory(ItemType.Weapon);
         OnSlotClick?.Invoke(_currentSelectItem);
+        showMoney.text = _money+"";
 
     }
     private void Update()
@@ -56,6 +61,7 @@ public class UIInventory : MonoBehaviour
             RefreshUIInventory(ItemType.Weapon);
             OnSlotClick?.Invoke(_currentSelectItem);
         }
+
     }
     private GameObject CreateUISlot(SlotItem slotItem)
     {
@@ -64,6 +70,21 @@ public class UIInventory : MonoBehaviour
         slot.transform.GetChild(0).GetComponent<Image>().sprite = slotItem.item._icon;
         slot.transform.GetChild(1).GetComponentInChildren<TextMeshProUGUI>().text = slotItem.stackCount.ToString();
         return slot;
+    }
+
+    public void BuyItem()
+    {
+        int priceItem = _currentSelectItem._price;
+        if(_money >= priceItem)
+        {
+            _money -= priceItem;
+            showMoney.text = _money + "";
+            Debug.Log("Buy this item");
+        }
+        else
+        {
+            Debug.Log("Can not buy this item");
+        }
     }
     public void RefreshUIInventory(ItemType itemType)
     {
